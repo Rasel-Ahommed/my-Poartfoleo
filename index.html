@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rasel | My Poartfoleo</title>
+	<link rel="icon" type="image/icon" href="asset/logo/favicon.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+
+		
+</head>
+<body>
+
+<!-- --------------NAV BAR START------------- -->
+
+	<nav id="navBar">
+		<div class="logo">
+			<img src="asset/logo/logo-white.png" alt="logo">
+		</div>
+		<ul>
+			<li><a href="#Home" id ="highLight">Home</a></li>
+			<li><a href="#About">About</a></li>
+			<li><a href="#Services">Services</a></li>
+			<li><a href="#Works">Works</a></li>
+			<li><a href="#Contact">Contact</a></li>
+		</ul>
+	</nav>
+<!-- --------------NAV BAR END------------- -->
+
+	<!-- --------- HOME START -------- -->
+	<section class="Home" id="Home">
+		<div class="hero">
+			<h2>Welcome</h2>
+			<h1>I'M <span class="type"></span></h1>
+			<p>Hi I am Rasel Ahommed. I am a Web Developer. I have completed <br> diploma from Computer Science department.</p>
+			<button><a href="#">DOWNLOAD CV</a></button><br>
+            <a href="#About" class="scroll_down">
+                <i class="text-white"></i>
+            </a>
+		</div>
+	</section>
+<!-- --------- HOME END -------- -->
+
+<!-- --------- ABOUT START -------- -->
+	<section class="About" id="About">
+		<div class="myPic">
+			<img src="asset/img/aboutImg1.png" alt="img">
+		</div>
+		<div class="aboutMe">
+			<h1>About Me</h1>
+			<h2>Hello! I'M <span id="highLight">Rasel Ahommed.</span></h2>
+			<p>Hi I am Rasel Ahommed. I am a Web Developer. I love programming. I know Java,<br>
+			PHP and JavaScript programming language. <br><br> 
+
+			I have completed diploma from Computer Science department. I Worked as an ambassador of ICT Olympiad Bangladesh for some time. I have team work experience. I want to be a successful web developer.  </p>
+			<a href="https://www.facebook.com/mdraselahommed.rana" target="blank"><div class="SocalIcn"><i class="fa-brands fa-facebook-f"></i></div></a>
+			<a href="https://www.instagram.com/rasel_ahommed" target="blank"><div class="SocalIcn"><i class="fa-brands fa-instagram"></i></div></a>
+			<a href="https://twitter.com/MDRasel_Ahommed" target="blank"><div class="SocalIcn"><i class="fa-brands fa-twitter"></i></div></a>
+			<a href="https://www.linkedin.com/in/rasel-ahommed?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bl6VD4yw7R%2FGn5ouRs%2Fqpkw%3D%3D" target="blank"><div class="SocalIcn"><i class="fa-brands fa-linkedin-in"></i></div></a>				
+		</div>
+	</section>
+<!-- --------- ABOUT END -------- -->
+
+<!-- --------- SERVICES START -------- -->
+	<section class="Services" id="Services">
+		<h1>My Services</h1>
+		<p>All my services and skills are highilghted in this section</p>
+		<div class="ServicesBox">
+			<i class="fa fa-desktop  SrvIcon"></i>
+			<h2>Responsive Design</h2>
+			<div class="line"></div>
+			<p>I can design any kind of professional responsive website</p>
+		</div>
+		<div class="ServicesBox">
+			<i class="fa fa-code SrvIcon"></i>
+			<h2>Web Development</h2>
+			<div class="line"></div>
+			<p>I can Develop any kind of professional website and I can do database managment</p>
+		</div>
+		<div class="ServicesBox">
+			<i class="far fa-file-alt SrvIcon"></i>
+			<h2>Offic Application</h2>
+			<div class="line"></div>
+			<p>I know working of all types of office application</p>
+		</div>
+	</section>
+<!-- --------- SERVICES END -------- -->
+
+<!-- --------- AVAILABLE START -------- -->
+	<section class="Available">
+		<h1>I Am Available For Freelancer.</h1>
+		<a href="https://www.freelancer.com/u/freelancerrase23" target="blank">HIRE ME!</a>
+	</section>
+<!-- --------- AVAILABLE END -------- -->
+
+<!-- -----------SCROLL UP START-------- -->
+	<a href="#">
+		<div class="upBtn">
+		<i class="fas fa-chevron-up"></i>
+		</div>
+	</a>
+<!-- -----------SCROLL UP END-------- -->
+
+
+
+
+
+
+
+
+	<script src="asset/js/typed.js"></script>
+<!--------------TYPEING STARY-------- -->
+	<script>
+		var typed = new Typed('.type', {
+  			strings: ["Rasel Ahommed.", "A Web Designer.","A Programmer." ,"A Web Developer."],
+  			typeSpeed: 120,
+            backSpeed: 60,
+            backDelay: 3000,
+            loop: true
+			});
+	</script>
+<!--------------TYPEING END-------- -->
+
+<!-- -------CUSTOM JAVASCRIPT START------- -->
+	<script>
+		function changeBg(){
+			var navbar = document.getElementById('navBar');
+			var scrollValue = window.scrollY;
+			if(scrollValue < 100){
+				navbar.classList.remove('bgcolor');
+			}else{
+				navbar.classList.add('bgcolor');
+			}
+		}
+		window.addEventListener('scroll',changeBg);
+	</script>
+<!-- -------CUSTOM JAVASCRIPT END------- -->
+</body>
+</html>

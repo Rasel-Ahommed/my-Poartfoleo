@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Nunito:400,600,700');
+html{
+    scroll-behavior: smooth;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    color: #fbfbfb;
+    overflow-x: hidden;
+    background: #2e3135;
+
+}
+
+/*----------NAV BAR START-----------*/
+
+nav {
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+.logo {
+    float: left;
+}
+
+.logo img {
+    width: 95px;
+    padding: 10px 0px;
+    margin-left: 75px;
+}
+
+ul {
+    display: inline-flex;
+    float: right;
+    padding: 21px;
+    font-size: 16px;
+    list-style: none;
+    margin-right: 72px;
+    font-weight: bold;
+}
+
+li a {
+    padding: 11px 22px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+#highLight{
+    color: #D15A70;
+}
+
+li a:hover{
+    color: #D15A70;
+}
+
+.bgcolor{
+    background-color: #000000;
+    color: black;
+    transition: all 0.5s;
+}
+/*----------NAV BAR END-----------*/
+
+/*----------HOME SECTION START-----------*/
+.Home{
+    background-image: linear-gradient(rgba(38, 40, 43, 0.72),rgba(38, 40, 43, 0.72)),
+    url(asset/img/background.jpg);
+    background-size:cover ;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero {
+    position: relative;
+    top: 56%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50% ,-50%);
+    text-align: center;
+}
+.hero h2{
+    font-size: 26px;
+}
+.hero h1 {
+    font-size: 50px;
+    margin-top: 8px;
+}
+.hero span{
+    color: #42d80a;
+}
+.hero p {
+    margin-top: 15px;
+    color: #fff;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.hero button {
+    background: transparent;
+    margin-top: 64px;
+    cursor: pointer;
+    border: none;
+}
+.hero button a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px 50px;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+.hero button a:hover{
+    background: white;
+    transition: all 0.8s;
+    color: black ;
+}
+
+.scroll_down i {
+    position: relative;
+    height: 44px;
+    width: 28px;
+    border-radius: 30px;
+    border: 2px solid #ffffff;
+    display: inline-block;
+    color: #fff;
+    font-size: 10px;
+    margin-top: 50px;
+    animation: bounce 0.9s infinite;
+}
+
+.scroll_down i:after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 11px;
+    border-radius: 2px;
+    bottom: 0px;
+    height: 10px;
+    width: 3px;
+    background: #fff;
+}
+@keyframes bounce{
+    10%{
+        transform: translateY(10px);
+    }
+}
+.upBtn {
+    width: 35px;
+    height: 35px;
+    background: #E65F78;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upBtn i {
+    font-size: 20px;
+    margin-top: 8px;
+     color: white;
+}
+/*----------HOME SECTION END-----------*/
+
+
+/*----------ABOUT SECTION START-----------*/
+section.About {
+    height: 100vh;
+    padding-top: 135px;
+    padding-bottom: 100px;
+    padding-right: 75px;
+}
+.myPic {
+    float: left;
+    margin-right: 15px;
+}
+.About img {
+    width: 83%;
+    border: 5px solid #4d5052;
+    border-radius: 5px;
+    margin-bottom: 100px;
+    margin-left: 75px;
+}
+.About h1 {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.About h2 {
+    font-size: 26px;
+}
+.About p {
+    color: #b2adaa;
+    margin-top: 30px;
+    line-height: 29px;
+}
+.SocalIcn {
+    float: left;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    margin-right: 22px;
+    margin-top: 42px;
+    border: 2px solid #b2adaa;
+    border-radius: 30px;
+    color: #b2adaa;
+}
+.SocalIcn i {
+    font-size: 16px;
+    padding: 12px 0px;
+}
+.SocalIcn:hover{
+    color: #E65F78;
+    border: 2px solid #E65F78;
+    transition: all 0.5s;
+}
+/*----------ABOUT SECTION END-----------*/
+
+/*----------SERVICES SECTION START-----------*/
+section.Services {
+    width: 100vw;
+    height: 100vh;
+    background: #26282b;
+    padding-right: 75px;
+    padding-left: 75px;
+}
+.Services h1 {
+    font-size: 36px;
+    padding-top: 108px;
+    text-align: center;
+}
+.Services p {
+    text-align: center;
+    margin: 7px;
+    margin-bottom: 76px;
+    color: #a0a0ac;
+    letter-spacing: 1px;
+}
+.ServicesBox {
+    width: 30%;
+    height: 264px;
+    border: 1px solid #353941;
+    float: left;
+    margin-right: 37px;
+    border-radius: 5px;
+}
+.SrvIcon {
+    font-size:44px;
+    padding: 24px 141px;
+    color: #E65F78;
+}
+.ServicesBox h2{
+    text-align: center;
+}
+.line {
+    height: 2px;
+    width: 40px;
+    background: #E65F78;
+    margin: 15px auto;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+
+.ServicesBox:hover .line {
+     width: 60px;
+}
+/*----------AVAILABLE START -----------*/
+section.Available {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.Available  h1 {
+    font-size: 2rem;
+    font-family: sans-serif;
+    margin-bottom: 40px;
+}
+.Available  a {
+    text-decoration: none;
+    color: white;
+    background: #E65F78;
+    padding: 17px 35px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+/*----------AVAILABLE END ----------*/
