@@ -78,7 +78,7 @@ li a:hover{
     position: relative;
     top: 56%;
     left: 50%;
-    width: 50%;
+    width: 75%;
     transform: translate(-50% ,-50%);
     text-align: center;
 }
@@ -242,7 +242,7 @@ section.Services {
     letter-spacing: 1px;
 }
 .ServicesBox {
-    width: 30%;
+    width: 338px;
     height: 264px;
     border: 1px solid #353941;
     float: left;
@@ -306,7 +306,7 @@ section.Work {
 .work_box {
     overflow: hidden;
     position: relative;
-    width: 30%;
+    width: 338px;
     height: 264px;
     float: left;
     margin-right: 37px;
@@ -401,7 +401,7 @@ section.Work {
 }
 .contactForm input {
     background: transparent;
-    width: 46%;
+    width: 512px;
     padding: 15px;
     border: 2px solid #3b3e42;
     margin: 13px 11px;
@@ -423,7 +423,7 @@ textarea#massage {
     color: white;
 }
 input#submit {
-    width: 20%;
+    width: 230px;
     color: white;
     background: #E65F78;
     padding: 20px;
@@ -449,7 +449,7 @@ section.footer {
 
 .footerIcon {
     text-align: center;
-    margin-left: 39%;
+    margin-left: 515px;
     padding-top: 28px;
 }
 .footerIcon p {
@@ -471,11 +471,16 @@ section.footer {
 }
 #navBar ul {
     float: left;
-    padding: 8px 0;
+    margin-left: -34px;  
+    margin-top: -20px;
+
+}
+#navBar li a {
+    padding: 9px 16px;
 }
 .hero {
     position: relative;
-    top: 67%;
+    top: 45%;
 }
 .hero h2 {
     font-size: 20px;
@@ -485,7 +490,7 @@ section.footer {
     margin-top: 8px;
 }
 .hero p {
-    line-height: 18px;
+    line-height: 26px;
 }
 .hero button {
     margin-top: 50px;
@@ -493,28 +498,32 @@ section.footer {
 .hero button a {
     padding: 14px 37px;
 }
-.About img {
-    width: 40%;
-    margin-left: 11px;
-}
 section.About {
-    padding-right: 0px;
+    height: 100vh;
+}
+.myPic {
+    float: none;
+}
+.About img {
+    width: 290px;
+    margin-left: 54px;
+    margin-bottom: 0px;
 }
 .aboutMe {
-    float: right;
-    width: 239px;
-    margin-top: -60%;
-}
-.About h1 {
-    font-size: 19px;
+    text-align: center;
+    width: 100vw;
+    padding: 25px;
 }
 .About h2 {
-    font-size: 17px;
     margin-top: 10px;
 }
 .About p {
-    margin-top: 8px;
+    margin-top: 10px;
     line-height: 22px;
+}
+.allIcon {
+    margin-left: 68px;
+    margin-top: 26px;
 }
 .SocalIcn {
     width: 35px;
@@ -529,22 +538,28 @@ section.About {
     padding-top: 105px;
 }
 .ServicesBox {
-    width: 95%;
+    width: 270px;
+    padding: 5px;
+    height: 290px;
 }
 section.Services {
-    height: 225vh;
+    height: 150vh;
+    padding-left: 65px;
+}
+.ServicesBox i {
+    margin-left: -38px;
 }
 .Available h1 {
     font-size: 1.7rem;
 }
 section.Work {
-    height: 400vh;
+    height: 250vh;
 }
 .work_box {
     width: 100%;
 }
 .contactMe {
-    margin: 0px 22px 26px 35px;
+        margin: 0px -4px 46px 28px;
 }
 .contactMe i {
     font-size: 25px;
